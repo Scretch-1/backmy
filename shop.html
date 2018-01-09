@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	
+	<meta charset="utf-8">
+
+	<title>Shop</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style> html { background-color: #fff;}</style>
+
+</head>
+
+<body>
+	<div id="my-page">
+		<div class="loader">
+			<div class="loader-inner"></div>
+		</div>
+
+		<!-- BEGIN header -->
+		<header class="header">
+			<div class="panel-global">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+
+							<div class="line-global">
+								<div class="box-logo"><a href="#$" class="logo"><img src="img/logo.png" class="img-responsive" alt="logo"></a> <a href="javascript:void(0)" class="hamburger d-md-none"><i class="icon icon-bars"></i></a></div>
+								<div class="box-search">
+									<div class="ui-widget widget-search">
+										<div class="form-controls ui-widget">
+											<label for="tags"></label>
+											<input id="tags" placeholder="Поиск магазинов">
+										</div>
+									</div>
+									<a href="#$" class="ui-button btn btn-primary">Магазины</a>
+									<a href="javascript:void(0)" class="hamburger d-lg-none"><i class="icon icon-bars"></i></a>
+								</div>
+								<!-- Разкомментировать блок ниже для проверки кнопок регистрации и входа, параллельно с этим нужно закомментировать блок для авторизованного пользователя иначе будет криво -->
+								<!-- <div class="box-all" id="inline-popups">
+									<a href="#test-popup" data-effect="mfp-move-horizontal" class="ui-button btn btn-default btn-default--warning">Регистрация</a>
+									<a href="#test-popup1" data-effect="mfp-move-horizontal" class="ui-button btn btn-primary">Войти</a>
+								</div> -->
+								<div class="box-all">
+									<div class="part-left">
+										<div class="d-flex align-items-center mb-2em">
+											<span class="text-gray">Александр</span>
+											<!-- Разкомментировать блок ниже для проверки статусов серебро, бронза -->
+											<!-- <a href="#$" class="status status-bronze">
+												<img src="img/svg/bronze.svg" alt="img">
+												<p><b class="text-gray">Bronze</b><span class="text-warning">статус</span></p>
+											</a> -->
+											<!-- Разкомментировать блок ниже для проверки статусов серебро, бронза -->
+											<!-- <a href="#$" class="status status-silver">
+												<img src="img/svg/silver.svg" alt="img">
+												<p><b class="text-gray">Silver</b><span class="text-warning">статус</span></p>
+											</a> -->
+											<a href="#$" class="status status-gold">
+												<img src="img/svg/gold.svg" alt="img">
+												<p><b class="text-gray">Gold</b><span class="text-warning">статус</span></p>
+											</a>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="box-point"><span class="text-darken">Ваш баланс:</span><strong class="text-accent">689.25 <span class="rub rub-accent">Р</span></strong></div>
+											<div class="box-point"><span class="text-darken">Ожидается:</span><strong class="text-darken">3 515.10 <span class="rub rub-default">Р</span></strong></div>
+										</div>
+									</div>
+									<div class="part-right">
+										<div class="d-flex align-items-center">
+											<div class="box-point"><a href="#$"><i class="icon icon-pic13"></i></a></div>
+											<div class="box-point"><a class="badge-wrap" href="#$"><i class="icon icon-envelope"></i><span class="badge badge-warning">2</span></a></div>
+										</div>
+										<div class="d-flex align-items-center">
+											<nav>
+												<a class="dropdown-toggle circle circle-orange" href="#"><img class="img-responsive" src="img/svg/user.svg" alt="user"></a>
+												<ul class="dropdown">
+													<li><a href="#$"><i class="icon icon-pic1"></i> <span class="text-default">Магазины</span></a></li>
+													<li><a href="#"><i class="icon icon-pic2"></i> <span class="text-default">Расширение для браузера</span></a></li>
+													<li><a href="#"><i class="icon icon-pic3"></i> <span class="text-default">Что такое кэшбэк</span></a></li>
+													<li><a href="#"><i class="icon icon-pic4"></i> <span class="text-default">Новости</span></a></li>
+													<li><a href="#"><i class="icon icon-pic5"></i> <span class="text-default">Мои магазины</span></a></li>
+													<li><a href="#"><i class="icon icon-pic6"></i> <span class="text-default">Мои заказы</span></a></li>
+													<li><a href="#"><i class="icon icon-pic7"></i> <span class="text-default">Мои отзывы</span></a></li>
+													<li><a href="#"><i class="icon icon-pic8"></i> <span class="text-default">Выплаты</span></a></li>
+													<li><a href="#"><i class="icon icon-pic9"></i> <span class="text-default">Поддержка</span></a></li>
+													<li><a href="#"><i class="icon icon-pic10"></i> <span class="text-default">Приведи друга</span></a></li>
+													<li><a href="#"><i class="icon icon-pic11"></i> <span class="text-default">Уведомления</span></a></li>
+													<li><a href="#"><i class="icon icon-pic12"></i> <span class="text-default">Генератор ссылок</span></a></li>
+													<li><a href="#"><i class="icon icon-pic13"></i> <span class="text-default">Настройки</span></a></li>
+													<li><a href="#"><i class="icon icon-pic14"></i> <span class="text-default">История переходов</span></a></li>
+													<li><a href="#" class="link-gray"><i class="icon icon-pic15"></i> <span class="text-default">Выход из профиля</span></a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-gray type-two">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+
+							<!-- BEGIN breadcrumb -->
+								<nav class="breadcrumbs">
+									<ol>
+										<li class="breadcrumbs-item"><a href="#">Главная</a></li>
+										<li class="breadcrumbs-item"><span>></span></li>
+										<li class="breadcrumbs-item"><a href="#">Магазины</a></li>
+										<li class="breadcrumbs-item"><span>></span></li>
+										<li class="breadcrumbs-item active" aria-current="page">Aliexpress</li>
+									</ol>
+								</nav>
+							<!-- END breadcrumb -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="panel-gray type-one">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+
+							<!-- BEGIN widget-shop -->
+							<div class="widget-shop box box-default">
+								<div class="widget-line d-flex">
+									<div class="part-left">
+										<a class="part-brand" href="#$"><img class="img-responsive" src="img/pic19.png" alt="pic"></a>
+										<div class="part-content">
+											<span class="text-mute">Кэшбэк</span>
+											<p><strong class="text-warning">8.03%</strong></p>
+											<div class="wrap">
+												<a href="#$" class="hearth-link"><i class="icon icon-pic18"></i> <i class="icon icon-pic17"></i></a>
+												<span class="text-gray">Добавить в избранное</span>
+											</div>
+											<a href="#$" class="ui-button btn btn-deformate d-none d-md-block"><span>Перейти в магазин</span></a>
+											<a href="#$" class="ui-button btn btn-primary d-md-none"><span>Перейти в магазин</span></a>
+											<a href="#$" class="text-accent"><span>Есть промокоды </span><span>(34)</span></a>
+										</div>
+									</div>
+									<div class="part-right">
+										<div class="line-opacity">
+											<div class="wrap wrap-default">
+												<div class="wrapper">
+													<input class="radio" type="radio" id="star1" name="star" />
+													<label class="stars" for="star1"></label>
+													<input class="radio" type="radio" id="star2" name="star" />
+													<label class="stars" for="star2"></label>
+													<input class="radio" type="radio" id="star3" name="star" checked="checked"/>
+													<label class="stars" for="star3"></label>
+													<input class="radio" type="radio" id="star4" name="star" />
+													<label class="stars" for="star4"></label>
+													<input class="radio" type="radio" id="star5" name="star" />
+													<label class="stars" for="star5"></label>
+												</div>
+												<a href="#$"><strong class="text-accent">Отзывы</strong> <strong class="text-gray">(371)</strong></a>
+											</div>
+											<div class="wrap wrap-default">
+												<div class="box box-rounded">
+													<b class="circle circle-primary">35</b>
+													<b class="text-accent">Суток</b>
+													<hr class="sep sep-vert">
+													<span class="text-gray">Среднее Время зачисления кэшбэка</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END widget-shop -->
+							
+						</div>
+					</div>
+					<section class="row d-flex align-items-stretch">
+						<div class="col-md-7">
+							<div class="box box-one box-text height-stretch">
+								<h3 class="text-mute">Кэшбэк в Aliexpress</h3>
+								<p class="text-mute">Aliexpress - известный китайский интернет-магазин, где можно купить абсолютно все, от крошечной батарейки для наручных часов до трактора в местное хозяйство. Если вы по какой-то причине еще не знаете об Алиэкспрессе, то вот слово, которым можно его описать: дешево. Еще одно слово, не менее важное: много. </p>
+								<p class="text-mute">Купить на Aliexpress можно все: одежду, обувь, электронику мелкую и крупную, косметику, игрушки, товары для творчества - мы серьезно, ВСЁ. Пока что самолетов в продаже не появлялось, но кто знает, как там дальше пойдет :) И так как Алиэкспресс официальный сайт популярен, дадим вам несколько советов по покупке:</p>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="box box-one box-inline">
+								<ul class="part-content d-flex">
+									<li><a href="#$" class="text-accent">Магазин доступен в расширении для браузера</a></li>
+									<li><a href="#$"><img src="img/pic3.png" alt="pic"></a> <a href="#$"><img src="img/pic2.png" alt="pic"></a></li>
+								</ul>
+							</div>
+							<div class="box box-one box-text mb-0">
+								<h3 class="text-mute">Приведи друзей</h3>
+								<div class="social-likes social-likes_light" id="social-likes1">
+									<div class="vkontakte" title="Поделиться ссылкой во Вконтакте"></div>
+									<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках"></div>
+									<div class="facebook" title="Поделиться ссылкой на Фейсбуке"></div>
+									<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе"></div>
+									<div class="twitter" title="Поделиться ссылкой в Твиттере"></div>
+								</div>
+								<b><span class="text-gray">И получи</span> <strong class="text-warning">5%</strong> <span class="text-gray">от их кэшбэка</span></b>
+							</div>
+						</div>
+					</section>
+					<div class="row">
+						<div class="col">
+
+							<div class="main-title">
+								<h2 class="text-gray">Похожие магазины</h2>
+							</div>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<!-- BEGIN carousel -->
+							<div class="owl-carousel carousel-two upgrade" id="carousel-second">
+								<div class="item">
+									<div class="card-box card-one">
+										<a href="#$" class="hearth-link"><i class="icon icon-pic18"></i> <i class="icon icon-pic17"></i></a>
+										<a class="part-brand" href="#$"><img class="img-responsive" src="img/pic21.png" alt="pic"></a>
+										<div class="part-title">
+											<b class="text-mute">Lamoda</b>
+										</div>
+										<div class="part-content">
+											<span class="text-mute">Кэшбэк</span>
+											<p><strong class="text-warning">6.10%</strong></p>
+										</div>
+										<div class="part-bottom">
+											<a href="#$" class="ui-button btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card-box card-one">
+										<a href="#$" class="hearth-link"><i class="icon icon-pic18"></i> <i class="icon icon-pic17"></i></a>
+										<a class="part-brand" href="#$"><img class="img-responsive" src="img/pic22.png" alt="pic"></a>
+										<div class="part-title">
+											<b class="text-mute">М-Видео</b>
+										</div>
+										<div class="part-content">
+											<span class="text-mute">Кэшбэк</span>
+											<p><span class="text-mute">до</span><strong class="text-warning">8.03</strong> <span class="rub rub-mute">Р</span></p>
+										</div>
+										<div class="part-bottom">
+											<a href="#$" class="ui-button btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card-box card-one">
+										<a href="#$" class="hearth-link"><i class="icon icon-pic18"></i> <i class="icon icon-pic17"></i></a>
+										<a class="part-brand" href="#$"><img class="img-responsive" src="img/pic20.png" alt="pic"></a>
+										<div class="part-title">
+											<b class="text-mute">Ozon</b>
+										</div>
+										<div class="part-content">
+											<span class="text-mute">Кэшбэк</span>
+											<p><strong class="text-warning">7.16%</strong></p>
+										</div>
+										<div class="part-bottom">
+											<a href="#$" class="ui-button btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card-box card-one">
+										<a href="#$" class="hearth-link"><i class="icon icon-pic18"></i> <i class="icon icon-pic17"></i></a>
+										<a class="part-brand" href="#$"><img class="img-responsive" src="img/pic18.png" alt="pic"></a>
+										<div class="part-title">
+											<b class="text-mute">BonPrix</b>
+										</div>
+										<div class="part-content">
+											<span class="text-mute">Кэшбэк</span>
+											<p><strong class="text-warning">5.02%</strong></p>
+										</div>
+										<div class="part-bottom">
+											<a href="#$" class="ui-button btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card-box card-one">
+										<a href="#$" class="hearth-link"><i class="icon icon-pic18"></i> <i class="icon icon-pic17"></i></a>
+										<a class="part-brand" href="#$"><img class="img-responsive" src="img/pic16.png" alt="pic"></a>
+										<div class="part-title">
+											<b class="text-mute">Мегафон</b>
+										</div>
+										<div class="part-content">
+											<span class="text-mute">Кэшбэк</span>
+											<p><strong class="text-warning">10.00%</strong></p>
+										</div>
+										<div class="part-bottom">
+											<a href="#$" class="ui-button btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END carousel -->
+						</div>
+					</div>
+					<div class="row panel-two">
+						<div class="col">
+							<div class="wrap-btn">
+								<a href="#$" class="ui-button btn btn-primary text-upper">все магазины</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="panel-default type-one d-none d-xl-block">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+
+							<div class="main-title">
+								<h2 class="text-gray">Отзывы AliExpress</h2>
+							</div>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+
+							<!-- BEGIN widget-reviews -->
+							<div class="widget-reviews">
+								<div class="line-reviews type-one">
+									<div class="widget-review type-one">
+										<div class="wrap-reviews">
+											<div class="widget-top">
+												<a href="#$" class="user-circle"><img src="img/user2.png" alt="user"></a>
+												<div class="d-flex align-items-end">
+													<div class="part-left">
+														<a href="#$"><strong class="text-mute">Архипова Лора</strong></a>
+														<div class="wrapper">
+															<input class="radio" type="radio" id="star10" name="star1" />
+															<label class="stars" for="star10"></label>
+															<input class="radio" type="radio" id="star20" name="star1" />
+															<label class="stars" for="star20"></label>
+															<input class="radio" type="radio" id="star30" name="star1" checked="checked"/>
+															<label class="stars" for="star30"></label>
+															<input class="radio" type="radio" id="star40" name="star1" />
+															<label class="stars" for="star40"></label>
+															<input class="radio" type="radio" id="star50" name="star1" />
+															<label class="stars" for="star50"></label>
+														</div>
+													</div>
+													<span class="text-mute">12.04.2016</span>
+												</div>
+											</div>
+											<div class="widget-text type-one">
+												<div class="area-message">
+													<div class="arrow-hide"></div>
+													<p class="text-mute">Всем привет! Хочу поделиться своим опытом</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="widget-review type-one">
+										<div class="wrap-reviews">
+											<div class="widget-top">
+												<a href="#$" class="user-circle user-circle--primary"><i class="icon icon-user-main"></i></a>
+												<div class="d-flex align-items-end">
+													<div class="part-left">
+														<a href="#$"><strong class="text-mute">Владимиров Сергей</strong></a>
+														<div class="wrapper">
+															<input class="radio" type="radio" id="star11" name="star2" />
+															<label class="stars" for="star11"></label>
+															<input class="radio" type="radio" id="star21" name="star2" />
+															<label class="stars" for="star21"></label>
+															<input class="radio" type="radio" id="star31" name="star2" checked="checked"/>
+															<label class="stars" for="star31"></label>
+															<input class="radio" type="radio" id="star41" name="star2" />
+															<label class="stars" for="star41"></label>
+															<input class="radio" type="radio" id="star51" name="star2" />
+															<label class="stars" for="star51"></label>
+														</div>
+													</div>
+													<span class="text-mute">12.04.2016</span>
+												</div>
+											</div>
+											<div class="widget-text type-one">
+												<div class="area-message">
+													<div class="arrow-hide"></div>
+													<p class="text-mute">Доброго времени суток, добрался и я до отзывов. Сервисом Back My Cash пользуюсь пару месяцев, пока что все здорово :)</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="widget-review type-two">
+										<div class="wrap-reviews">
+											<div class="widget-top">
+												<a href="#$" class="user-circle user-circle--warning"><i class="icon icon-user-main"></i></a>
+												<div class="d-flex align-items-end">
+													<div class="part-left">
+														<a href="#$"><strong class="text-mute">Администратор</strong></a>
+													</div>
+													<span class="text-mute">12.04.2016</span>
+												</div>
+											</div>
+											<div class="widget-text type-one">
+												<div class="area-message">
+													<div class="arrow-hide"></div>
+													<p class="text-mute">Доброго времени суток, добрался и я до отзывов. Сервисом Back My Cash пользуюсь пару месяцев, пока что все здорово :)</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="widget-review type-one">
+										<div class="wrap-reviews">
+											<div class="widget-top">
+												<a href="#$" class="user-circle"><img src="img/user2.png" alt="user"></a>
+												<div class="d-flex align-items-end">
+													<div class="part-left">
+														<a href="#$"><strong class="text-mute">Архипова Лора</strong></a>
+														<div class="wrapper">
+															<input class="radio" type="radio" id="star12" name="star3" />
+															<label class="stars" for="star12"></label>
+															<input class="radio" type="radio" id="star22" name="star3" />
+															<label class="stars" for="star22"></label>
+															<input class="radio" type="radio" id="star32" name="star3" checked="checked"/>
+															<label class="stars" for="star32"></label>
+															<input class="radio" type="radio" id="star42" name="star3" />
+															<label class="stars" for="star42"></label>
+															<input class="radio" type="radio" id="star52" name="star3" />
+															<label class="stars" for="star52"></label>
+														</div>
+													</div>
+													<span class="text-mute">12.04.2016</span>
+												</div>
+											</div>
+											<div class="widget-text type-one">
+												<div class="area-message">
+													<div class="arrow-hide"></div>
+													<p class="text-mute">Всем привет! Хочу поделиться своим опытом покупок с кэшбэком на Back My Cash. Первое - все работает! :)</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END widget-reviews -->
+
+						</div>
+					</div>
+					<div class="row panel-two">
+						<div class="col">
+							<div class="wrap-btn">
+								<a href="#$" class="ui-button btn btn-primary text-upper">Написать отзыв</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+
+							<!-- BEGIN pagination -->
+							<div class="pagination">
+								<ul>
+									<li class="prew"><a href="#$"><i class="icon icon-angle-left"></i></a></li>
+									<li class="active"><a href="#$"><span>1</span></a></li>
+									<li class="default"><a href="#$"><span></span></a></li>
+									<li><a href="#$"><span>59</span></a></li>
+									<li class="next"><a href="#$"><i class="icon icon-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<!-- END pagination -->
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</header>
+		<!-- END header -->
+		
+		<!-- BEGIN content -->
+		<main class="content">
+			
+		</main>
+		<!-- END content -->
+		
+		<!-- BEGIN footer -->
+		<footer class="footer">
+			<div class="panel-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 first-flex">
+							<div class="footer-box footer-box--one">
+								<div class="part-top d-none d-md-block">
+									<strong class="text-mute">Выплаты с помощью:</strong>
+								</div>
+								<ul class="part-content d-none d-md-flex">
+									<li><a href="#$"><img src="img/pic7.png" alt="pic"></a></li>
+									<li><a href="#$"><img src="img/pic5.png" alt="pic"></a></li>
+									<li><a href="#$"><img src="img/pic6.png" alt="pic"></a></li>
+									<li><a href="#$"><img src="img/pic4.png" alt="pic"></a></li>
+									<li><a href="#$"><img src="img/pic1.png" alt="pic"></a></li>
+								</ul>
+								<div class="part-top">
+									<strong class="text-mute">Мобильное приложение:</strong>
+								</div>
+								<ul class="part-content d-flex">
+									<li><a href="#$"><img src="img/pic3.png" alt="pic"></a></li>
+									<li><a href="#$"><img src="img/pic2.png" alt="pic"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 d-none justify-content-center d-lg-flex">
+							<div class="footer-box footer-box--two">
+								<div class="part-top">
+									<strong class="text-mute">Основные разделы</strong>
+								</div>
+								<ul class="part-content">
+									<li><a href="#$"><span>Магазины</span></a></li>
+									<li><a href="#$"><span>Расширение для браузера</span></a></li>
+									<li><a href="#$"><span>Вопрос ответ</span></a></li>
+									<li><a href="#$"><span>Новости</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 end-flex">
+							<div class="footer-box footer-box--three">
+								<div class="sub-reverse">
+									<div class="part-top">
+										<strong class="text-mute">Мы в социальных сетях:</strong>
+									</div>
+									<ul class="part-content d-flex">
+										<li><a href="#$"><img src="img/svg/ic-vk.svg" alt="pic"></a></li>
+										<li><a href="#$"><img src="img/svg/ic-fc.svg" alt="pic"></a></li>
+										<li><a href="#$"><img src="img/svg/ic-ok.svg" alt="pic"></a></li>
+										<li><a href="#$"><img src="img/svg/ic-g+.svg" alt="pic"></a></li>
+										<li><a href="#$"><img src="img/svg/ic-ya.svg" alt="pic"></a></li>
+										<li><a href="#$"><img src="img/svg/ic-inst.svg" alt="pic"></a></li>
+									</ul>
+								</div>
+								<div class="sub-reverse">
+									<div class="part-top">
+										<strong class="text-mute">Контакты:</strong>
+									</div>
+									<div class="part-content">
+										<p><span class="text-mute">E-mail:</span> <a href="mailto:backmycash@inbox.ru" class="text-mute">backmycash@inbox.ru</a></p>
+										<p><span class="text-mute">Тел.:</span> <a href="tel:88002342343" class="text-accent">8 (800) 234-23-43</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-blue">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="d-flex justify-content-between"><span class="text-white">© 2017-2017 «BackMyCash»</span><span class="text-white">v.1.3.6</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END footer -->
+
+		<!-- BEGIN popups -->
+			<div id="test-popup" class="popup mfp-with-anim mfp-hide">
+				<div class="popup-top">
+					<h2>Регистрация</h2>
+				</div>
+				<div class="popup-center">
+					<div class="part-left">
+						<div class="social-box social-one">
+							<p class="text-mute">Регистрация через соцсети</p>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-vk.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-fc.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ok.svg" alt="svg"></a>
+							</div>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-g+.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ya.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-inst.svg" alt="svg"></a>
+							</div>
+						</div>
+					</div>
+					<div class="part-right">
+						<div class="menu-form">
+							<label for="cemail4" class="text-mute">Регистрация через e-mail</label>
+							<form action="#$" id="form-four" class="form form-one" name="form-one" method="post">
+								<div class="form-content">
+									<div class="form-group">
+										<input class="form-control" id="cemail4" name="email" type="email" placeholder="Ваш E-mail" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="password" name="password" id="password4" placeholder="Пароль" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="password" name="password_again" id="password_again4" placeholder="Повторно пароль" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-cyan" type="text" name="code-one" id="code-one4" placeholder="Введите пригласительный код, если есть">
+									</div>
+									<button type="submit" class="ui-button btn btn-primary">Зарегистрироваться</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="test-popup1" class="popup mfp-with-anim mfp-hide">
+				<div class="popup-top">
+					<h2>Вход</h2>
+				</div>
+				<div class="popup-center">
+					<div class="part-left">
+						<div class="social-box social-one">
+							<p class="text-mute">Войти через соцсети</p>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-vk.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-fc.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ok.svg" alt="svg"></a>
+							</div>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-g+.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ya.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-inst.svg" alt="svg"></a>
+							</div>
+						</div>
+					</div>
+					<div class="part-right">
+						<label for="cemail5" class="text-mute">Войти через e-mail</label>
+						<form action="#$" id="form-five" class="form form-two" name="form-one" method="post">
+							<div class="form-content">
+								<div class="form-group">
+									<input class="form-control" id="cemail5" name="email" type="email" placeholder="Ваш E-mail" required>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="password" id="password5" placeholder="Пароль" required>
+								</div>
+								<div class="d-flex align-items-center" id="inline-popups1">
+									<button type="submit" class="ui-button btn btn-primary">Войти</button>
+									<a href="#test-popup2" data-effect="mfp-move-horizontal">Забыли пароль?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="test-popup2" class="popup mfp-with-anim mfp-hide">
+				<div class="popup-top">
+					<h2>Восстановление пароля</h2>
+				</div>
+				<div class="popup-center">
+					<div class="part-left">
+						<div class="social-box social-one">
+							<p class="text-mute">Войти через соцсети</p>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-vk.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-fc.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ok.svg" alt="svg"></a>
+							</div>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-g+.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ya.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-inst.svg" alt="svg"></a>
+							</div>
+						</div>
+					</div>
+					<div class="part-right">
+						<label for="cemail6" class="text-mute">Восстановить пароль через e-mail</label>
+						<form action="#$" id="form-six" class="form form-one" name="form-one" method="post">
+							<div class="form-content">
+								<div class="form-group">
+									<input class="form-control" id="cemail6" name="email" type="email" placeholder="Ваш E-mail" required>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<canvas class="alert alert-mute" id="code6"></canvas>
+									<div class="form-group">
+										<input class="form-control" type="text" name="code-one" id="code-two6" placeholder="Введите код">
+									</div>
+								</div>
+								<button type="submit" class="ui-button btn btn-primary">Отправить запрос на e-mail</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<!-- END popups -->
+		<nav id="my-menu">
+			<div class="wrap-menu">
+				<div class="box-all">
+					<div class="part-left">
+						<div class="d-flex align-items-center mb-2em">
+							<span class="text-gray">Александр</span>
+							<!-- Разкомментировать блок ниже для проверки статусов серебро, бронза -->
+							<!-- <a href="#$" class="status status-bronze">
+								<img src="img/icon18.png" alt="img">
+								<p><b class="text-gray">Bronze</b><span class="text-warning">статус</span></p>
+							</a> -->
+							<!-- Разкомментировать блок ниже для проверки статусов серебро, бронза -->
+							<!-- <a href="#$" class="status status-silver">
+								<img src="img/icon17.png" alt="img">
+								<p><b class="text-gray">Silver</b><span class="text-warning">статус</span></p>
+							</a> -->
+							<a href="#$" class="status status-gold">
+								<img src="img/icon16.png" alt="img">
+								<p><b class="text-gray">Gold</b><span class="text-warning">статус</span></p>
+							</a>
+						</div>
+						<div class="d-flex align-items-center">
+							<div class="box-point"><span class="text-darken">Ваш баланс:</span><strong class="text-accent">689.25 <span class="rub rub-accent">Р</span></strong></div>
+							<div class="box-point"><span class="text-darken">Ожидается:</span><strong class="text-darken">3 515.10 <span class="rub rub-default">Р</span></strong></div>
+						</div>
+					</div>
+					<div class="part-right">
+						<div class="d-flex align-items-center">
+							<div class="box-point"><a href="#$"><i class="icon icon-pic13"></i></a></div>
+							<div class="box-point"><a class="badge-wrap" href="#$"><i class="icon icon-envelope"></i><span class="badge badge-warning">2</span></a></div>
+						</div>
+						<a class="dropdown-toggle circle circle-orange" href="#"><img class="img-responsive" src="img/svg/user.svg" alt="user"></a>
+					</div>
+					<a href="javascript:void(0)" class="hamburger d-lg-none"><i class="icon icon-close"></i></a>
+				</div>
+				<nav>
+					<ul class="dropdown">
+						<li><a href="#$"><i class="icon icon-pic1"></i> <span class="text-default">Магазины</span></a></li>
+						<li><a href="#"><i class="icon icon-pic2"></i> <span class="text-default">Расширение для браузера</span></a></li>
+						<li><a href="#"><i class="icon icon-pic3"></i> <span class="text-default">Что такое кэшбэк</span></a></li>
+						<li><a href="#"><i class="icon icon-pic4"></i> <span class="text-default">Новости</span></a></li>
+						<li><a href="#"><i class="icon icon-pic5"></i> <span class="text-default">Мои магазины</span></a></li>
+						<li><a href="#"><i class="icon icon-pic6"></i> <span class="text-default">Мои заказы</span></a></li>
+						<li><a href="#"><i class="icon icon-pic7"></i> <span class="text-default">Мои отзывы</span></a></li>
+						<li><a href="#"><i class="icon icon-pic8"></i> <span class="text-default">Выплаты</span></a></li>
+						<li><a href="#"><i class="icon icon-pic9"></i> <span class="text-default">Поддержка</span></a></li>
+						<li><a href="#"><i class="icon icon-pic10"></i> <span class="text-default">Приведи друга</span></a></li>
+						<li><a href="#"><i class="icon icon-pic11"></i> <span class="text-default">Уведомления</span></a></li>
+						<li><a href="#"><i class="icon icon-pic12"></i> <span class="text-default">Генератор ссылок</span></a></li>
+						<li><a href="#"><i class="icon icon-pic13"></i> <span class="text-default">Настройки</span></a></li>
+						<li><a href="#"><i class="icon icon-pic14"></i> <span class="text-default">История переходов</span></a></li>
+						<li><a href="#" class="link-gray"><i class="icon icon-pic15"></i> <span class="text-default">Выход из профиля</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Разкомментировать блок ниже для проверки окон входа, регистрации, пароля -->
+			<!-- <div class="wrap-menu1">
+				<div class="mm-nolistview type-one">
+					<div class="part-left">
+						<a href="#subpanel" class="ui-button btn btn-warning">Регистрация</a>
+						<a href="#subpanel1" class="ui-button btn btn-primary">Войти</a>
+					</div>
+					<a href="javascript:void(0)" class="hamburger"><i class="icon icon-close"></i></a>
+				</div>
+				<nav class="mm-nolistview type-two">
+					<ul class="dropdown">
+						<li><a href="#$"><i class="icon icon-pic1"></i> <span class="text-default">Магазины</span></a></li>
+						<li><a href="#"><i class="icon icon-pic2"></i> <span class="text-default">Расширение для браузера</span></a></li>
+						<li><a href="#"><i class="icon icon-pic3"></i> <span class="text-default">Что такое кэшбэк</span></a></li>
+						<li><a href="#"><i class="icon icon-pic4"></i> <span class="text-default">Новости</span></a></li>
+					</ul>
+				</nav>
+				<div class="Panel" id="subpanel">
+					<div class="menu-form">
+						<form action="#$" id="form-one" class="form form-one" name="form-one" method="post">
+							<div class="form-title">
+								<div class="col-title">
+									<h2><span class="text-mute">Регистрация</span></h2>
+								</div>
+								<div class="col-title">
+									<a href="#mm-0" class="hamburger-two"><i class="icon icon-close"></i></a>
+								</div>
+							</div>
+							<div class="form-content">
+								<div class="form-group">
+									<input class="form-control" id="cemail" name="email" type="email" placeholder="Ваш E-mail" required>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="password" id="password" placeholder="Пароль" required>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="password_again" id="password_again" placeholder="Повторно пароль" required>
+								</div>
+								<div class="form-group">
+									<input class="form-control form-cyan" type="text" name="code-one" id="code-one" placeholder="Введите пригласительный код, если есть">
+								</div>
+								<button type="submit" class="ui-button btn btn-primary">Зарегистрироваться</button>
+							</div>
+						</form>
+						<div class="social-box social-one">
+							<p class="text-mute">Регистрация через соцсети</p>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-vk.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-fc.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ok.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-g+.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ya.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-inst.svg" alt="svg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Panel" id="subpanel1">
+					<div class="menu-form">
+						<form action="#$" id="form-two" class="form form-two" name="form-one" method="post">
+							<div class="form-title">
+								<div class="col-title">
+									<h2><span class="text-mute">Вход</span></h2>
+								</div>
+								<div class="col-title">
+									<a href="#mm-0" class="hamburger-two"><i class="icon icon-close"></i></a>
+								</div>
+							</div>
+							<div class="form-content">
+								<div class="form-group">
+									<input class="form-control" id="cemail1" name="email" type="email" placeholder="Ваш E-mail" required>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="password" id="password1" placeholder="Пароль" required>
+								</div>
+								<div class="d-flex align-items-center">
+									<button type="submit" class="ui-button btn btn-primary">Войти</button>
+									<a href="#subpanel2">Забыли пароль?</a>
+								</div>
+							</div>
+						</form>
+						<div class="social-box social-one">
+							<p class="text-mute">Регистрация через соцсети</p>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-vk.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-fc.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ok.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-g+.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ya.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-inst.svg" alt="svg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Panel" id="subpanel2">
+					<div class="menu-form">
+						<form action="#$" id="form-three" class="form form-one" name="form-one" method="post">
+							<div class="form-title">
+								<div class="col-title">
+									<h2><span class="text-mute">Восстановление пароля</span></h2>
+								</div>
+								<div class="col-title">
+									<a href="#mm-0" class="hamburger-two"><i class="icon icon-close"></i></a>
+								</div>
+							</div>
+							<div class="form-content">
+								<div class="form-group">
+									<input class="form-control" id="cemail2" name="email" type="email" placeholder="Ваш E-mail" required>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<canvas class="alert alert-mute" id="code"></canvas>
+									<div class="form-group">
+										<input class="form-control" type="text" name="code-one" id="code-two" placeholder="Введите код">
+									</div>
+								</div>
+								<button type="submit" class="ui-button btn btn-primary">Отправить запрос на e-mail</button>
+							</div>
+						</form>
+						<div class="social-box social-one">
+							<p class="text-mute">Регистрация через соцсети</p>
+							<div class="social-wrap">
+								<a href="#$" class="social-link"><img src="img/svg/ic-vk.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-fc.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ok.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-g+.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-ya.svg" alt="svg"></a>
+								<a href="#$" class="social-link"><img src="img/svg/ic-inst.svg" alt="svg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</nav>
+	</div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
