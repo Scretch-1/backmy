@@ -42,10 +42,24 @@ $( "#for-link-4").on( "click", function() {
 $( "#for-link-5").on( "click", function() {
 	$( "#link-5" ).toggleClass( "part-visible" );
 });
-
 $('.dropdown-toggle').click(function(){
 	$(this).next('.dropdown').toggle();
 });
+
+$( "#btn-add").on( "click", function() {
+	$( ".part-add" ).toggleClass( "toggle" );
+});
+$( ".pay-line .close").on( "click", function() {
+	$( ".part-add" ).removeClass( "toggle" );
+});
+
+// inputmask
+	$('.mask-yandex').inputmask("999 - 999 - 999 - 999 - 999");  //static mask
+	$('.mask-visa').inputmask("9999 - 9999 - 9999 - 9999");  //static mask
+	$('.mask-webmoney').inputmask("- 999 999 999 999");  //static mask
+	$('.mask-phone').inputmask({"mask": " (999) 999-99-99"}); //specifying options
+	$('selector').inputmask("9-a{1,3}9{1,3}"); //mask with dynamic syntax
+// -end inputmask
 
 $(document).click(function(e) {
 	var target = e.target;
@@ -341,7 +355,27 @@ $( "#datepicker1" ).datepicker({
 	.addClass( "overflow" );
 
 	$( "#salutation" ).selectmenu();
+
+	$(".select-search").chosen({
+		enable_split_word_search: true,
+		no_results_text: 'Нет результатов',
+		placeholder_text_single: 'Выберите из списка',
+		inherit_select_classes: true,
+		include_group_label_in_selected: true
+	});
 // -end Selectmenu
+
+// scroll div
+$('.chosen-results').slimScroll({
+	height: '300px',
+	railVisible: true,
+	color:'#e6e6e6',
+	railColor: '#fff',
+	size: '9px',
+	railOpacity: 1,
+	opacity: 1
+});
+// -end scroll div
 
 // animatecss
 	//waypoints official site http://imakewebthings.com/waypoints/
@@ -409,6 +443,11 @@ $( "#datepicker1" ).datepicker({
 		hide: { effect: "fade", duration: 150 }
 	});
 	$( "#tabs-settings1" ).tabs({
+		collapsible: true,
+		show: { effect: "fade", duration: 150 },
+		hide: { effect: "fade", duration: 150 }
+	});
+	$( "#tabs-settings2" ).tabs({
 		collapsible: true,
 		show: { effect: "fade", duration: 150 },
 		hide: { effect: "fade", duration: 150 }
@@ -513,6 +552,15 @@ $ ('#social-likes1'). socialLikes ({
 		margin:10,
 		nav:true,
 		items: 1,
+		navText: [ '', '' ]
+	});
+	$('#carousel-four').owlCarousel({
+		loop:false,
+		margin:10,
+		nav:true,
+		items: 1,
+		animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
 		navText: [ '', '' ]
 	});
 	$('#carousel-third').owlCarousel({
