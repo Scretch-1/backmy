@@ -363,6 +363,11 @@ $( "#datepicker1" ).datepicker({
 		inherit_select_classes: true,
 		include_group_label_in_selected: true
 	});
+	// $(".select-search .default-list").chosen();
+	$(".select-search1").chosen({
+		inherit_select_classes: true,
+		disable_search: true,
+	});
 // -end Selectmenu
 
 // scroll div
@@ -483,6 +488,18 @@ $('.counter').counterUp({
 	},
 	midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 	});
+
+		$('.inline-popups').magnificPopup({
+			delegate: 'a',
+	removalDelay: 500, //delay removal by X to allow out-animation
+	callbacks: {
+		beforeOpen: function() {
+			this.st.mainClass = this.st.el.attr('data-effect');
+		}
+	},
+	midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+
 		$('#inline-popups1').magnificPopup({
 			delegate: 'a',
 	removalDelay: 500, //delay removal by X to allow out-animation
